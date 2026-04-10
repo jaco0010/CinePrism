@@ -105,15 +105,30 @@ body {
 #imagen-pelicula {
     padding: 20px;
     border-radius: 40px;
-    
+    width: 240px;
+    margin-top: 150px;
+    margin-right: 40px;
 }
 
 #cont-pelicula {
     display: flex;
     gap: 70px;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 19px;
+    position: relative;
+    height: 550px;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.fondo {
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 #cont-pelicula p {
@@ -121,11 +136,16 @@ body {
 }
 
 
+
 #info-principal {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     font-size: 20px;
+    margin-top: 8%;
+    position: relative;
+    right: 80px;
+    color: var(--color-text);
+
 }
 
 #info-secundaria {
@@ -133,6 +153,98 @@ body {
     flex-direction: column;
 }
 
+
+.botones-compra button{
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    border: 0.5px solid var(--color-border-buttons);
+    font-size: 18px;
+    color: var(--color-text);
+}
+
+.botones-compra span {
+    margin: 0 6px;
+}
+
+.total button {
+      padding: 10px 26px;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-border-buttons);
+    font-size: 18px;
+    color: var(--color-text);
+    border-radius: 20px;
+}
+
+.contenedor-general {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    gap: 100px;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.entradas-contenedor {
+    width: 700px;
+    margin-left: 100px;
+    border: 1px solid rgba(117, 117, 117, 0.389);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 50px;
+    
+}
+
+.info-pelicula {
+    display: flex;
+gap: 20px;
+justify-content: flex-start;
+width: fit-content;
+}
+
+
+.compra-resumen {
+    width: 200px;
+    margin-right: 200px;
+    border: 1px solid rgb(117, 117, 117, 0.389);
+    border-radius: 15px;
+    padding: 30px;
+    height: 1%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.general,
+.senior,
+.estudiante {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.entradas-contenedor h2 {
+    font-size: 50px;
+}
+
+.compra-resumen,
+.entradas,
+.resumen {
+    border-bottom: 1px solid white;
+}
+ 
+.entradas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.botones-compra button:hover,
+.total button:hover {
+    cursor: pointer;
+    background-color: #767676a1;
+}
 
 
 .footer {

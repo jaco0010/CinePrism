@@ -35,14 +35,13 @@ cargarDetalle()
 
 function mostrarDetalle (json) {
     console.log(json)
+document.querySelector(".fondo").style.backgroundImage = `url(https://image.tmdb.org/t/p/original${json.poster_path})`;
 imagenPelicula.src = `https://image.tmdb.org/t/p/w400${json.poster_path}`
 tituloPelicula.innerHTML = json.title;
 sinopsisPelicula.innerHTML = "<b>Sinopsis:</b> " + json.overview;
-generoPelicula.innerHTML = "<b>Genero:</b>  " + json.genres[0].name;
 tituloOriginal.innerHTML = "<b>Titulo original</b>  " +json.original_title;
 estadoPelicula.innerHTML = "<b>Estado:</b>  " + json.status;
 duracionPelicula.innerHTML = "<b>Duracion:</b>  " + json.runtime + "min";
-lenguajeOriginal.innerHTML = "<b>Lenguaje original:</b> " + json.original_language;
 
 
 }

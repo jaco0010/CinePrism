@@ -30,7 +30,6 @@ body {
     color: #F5F0FF;
     font-family: sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 .navbar {
@@ -113,6 +112,13 @@ body {
     color: #FFFFFF;
 }
 
+.title-featured {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 24px;
+}
+
 .movie-container img {
     display: flex;
     width: 250px;
@@ -153,14 +159,25 @@ body {
     border-radius: 18px;
     background-color: #222a3e60;
     margin-bottom: 50px;
+    transition: 0.2s ease-in;
+}
+
+.movie-container:hover {
+    transform: scale(1.08);
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    border-style:ridge;
+    border-color: var(--color-filter-active);
 }
 
 .week-movie {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid var(--color-accent);
+
 }
-.title-featured {
+
+featured {
     display: flex;
     justify-content: center;
     font-size: 24px;
@@ -177,10 +194,10 @@ body {
 }
 
 .buttons-films > button {
-      padding: 25px 30px;
+      padding: 13px 25px;
     background-color: var(--purple-mid);
     border-radius: 40px;
-    border: 3px solid var(--purple-dark);
+    border: 1px solid var(--color-border-buttons);
     font-size: 18px;
     color: var(--purple-dark);
     font-family: "calibri";
@@ -188,7 +205,7 @@ body {
 
 .buttons-films > button:hover {
      cursor: pointer;
-    background-color: var(--purple-light);
+    background-color: rgba(109, 109, 109, 0.382);
     color: var(--black);
 }
 .movies-showing {
@@ -214,15 +231,35 @@ body {
     gap: 30px;
 }
 
-.featured-films {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    border-radius: 18px;
-    background-color: #222a3e60;
-    margin-bottom: 50px;
-    gap: 30px;
+.container-featured {
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
+.featured-films {
+    display: flex;
+    background-color: #222a3e60;
+    margin-right: 14px;
+    border: 1px solid #222a3e60;
+    border-radius: 20px;
+    padding: 3%;
+    flex: 1 2;
+    margin-bottom: 25px;
+    gap: 20px;
+    align-items: center;
+    transition: 0.2s ease-out;
+}
+
+.featured-films:hover
+{
+    cursor: pointer;
+    background-color: #4b4a4a07;
+    transform: scale(1.05);
+    border: 1px solid rgba(255, 255, 255, 0.209);
+    transition: 0.2s ease-in;
+}
+
 
 .featured-films img {
     border-radius: 20px;
@@ -236,7 +273,18 @@ body {
     font-size: 18px;
     color: var(--color-text);
     font-family: "calibri";
-    width: 200px;
+    width: 100%;
+}
+
+.featured-films button:hover {
+    cursor: pointer;
+    background-color: rgba(113, 114, 122, 0.358)
+
+
+}
+
+.info-featured-films p {
+   color: var(--color-text-muted);
 }
 
 

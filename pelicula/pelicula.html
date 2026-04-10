@@ -1,43 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="pelicula.css">
 </head>
+
 <body>
     <nav class="navbar">
         <h1 class="logo">Cine Prism</h1>
         <div class="search-container">
             <input type="text" placeholder="Search movies..." id="input-search">
             <div id="search-results">
-                
+
             </div>
             <button id="buscar">Search</button>
         </div>
     </nav>
 
- <div id="cont-pelicula">
-  <img id="imagen-pelicula" alt="Poster de la película">
+    <div id="cont-pelicula">
+        <div class="fondo"></div>
+        <img id="imagen-pelicula" alt="Poster de la película">
 
-  <div id="info-principal">
-    <h1 id="titulo-pelicula"></h1>
-    <span id="titulo-original-pelicula"></span>
-    <p id="sinopsis-pelicula"></p>
-  </div>
+        <div id="info-principal">
+            <h1 id="titulo-pelicula"></h1>
+            <span id="titulo-original-pelicula"></span>
+            <p id="sinopsis-pelicula"></p>
+            <div class="info-pelicula">
+            <p id="duracion-pelicula"></p>
+            <p id="estado-pelicula"></p>
+                </div>
+        </div>
 
-  <div id="info-secundaria">
-    <p id="lenguaje-original"></p>
-    <p id="genero-pelicula"></p>
-    <h2 id="estado-pelicula"></h2>
-    <p id="duracion-pelicula"></p>
-  </div>
+    </div>
+
+    <div class="contenedor-general">
+
+        <div class="entradas-contenedor">
+
+            <h2>Compra tus entradas</h2>
+            <p>Elija sus asientos para la experiencia cinematografica perfecta.
+                Cada entrada otorga acceso a nuestras salas boutique con sonido inmersivo
+            </p>
+
+            <div class="general">
+                <div class="info-texto">
+                    <h3>General</h3>
+                    <p>Acceso estandar para adultos</p>
+                </div>
+                <div class="botones-compra">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="senior">
+                <div class="info-texto">
+                    <h3>Senior</h3>
+                    <p>Mayores de 65 años</p>
+                </div>
+                <div class="botones-compra">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="estudiante">
+                <div class="info-texto">
+                    <h3>Estudiante</h3>
+                    <p>Con acreditacion vigente</p>
+                </div>
+                <div class="botones-compra">
+                    <button>-</button>
+                    <span>0</span>
+                    <button>+</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="compra-resumen">
+
+            <div class="resumen">
+            <h3>Resumen de compra</h3>
+            <p>cine Prism</p>
+            <p>Fecha y hora</p>
 </div>
 
-<h2>Compra tus entradas</h2>
 
-<footer class="footer">
+            <div class="entradas">
+                <p>Senior x3 $29</p>
+                <p>Estudiantes x1 $10</p>
+            </div>
+
+            <div class="total">
+                <p><strong>TOTAL</strong>$28</p>
+                <button>Continuar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
         <p>My Website. All rights reserved</p>
         <a href="#">Privacy Policy</a>
         <a href="#">Contact us</a>
@@ -45,4 +113,5 @@
 
     <script src="pelicula.js"></script>
 </body>
+
 </html>
